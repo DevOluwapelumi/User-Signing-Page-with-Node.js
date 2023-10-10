@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
 </head>
 <body>
 
-    <h1>Welcome Oluwapelumi to the Dashboard</h1>
+
+    <style>
+        body {
+  background: red;
+  animation: mymove 5s infinite;
+  }
+  .container {
+      margin-top: 100px;
+  }
+  
+  @keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+  }
+  </style>
+
+    <nav class="bg-gray-500 p-5 text-white">
+        <ul class="flex items-center justify-between mx-20">
+            <a href="/"><li><b>Home</b></li></a>
+            <a href="/signup"><li><b>SignUp</b></li></a>
+            <a href="/login"><li><b>SignIn</b></li></a>
+            <a href="/dash"><li><b>Dashboard</b></li></a>
+        </ul>
+    </nav>
+
+    <h1 class="text-center mt-20 text-white"><b>Welcome Oluwapelumi to the Dashboard</b> </h1>
     
 </body>
 </html>
